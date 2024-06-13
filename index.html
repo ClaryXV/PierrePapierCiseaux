@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pierre papier ciseaux</title>
+</head>
+<body>
+    <header>
+
+        <img src="logo.png" alt="LOGO">
+
+        <h1 style ="font-size: 30px; color : #d6d6d6; margin-right: 15%; margin-top: 1%;">
+            Jeu en Javascript
+        </h1>
+
+    </header>
+
+    <main>  
+
+        <div class="choix">
+
+            <h2>
+                Pierre (👊), Papier (✋) et Ciseaux (✌)
+            </h2>
+
+            <div class="choixelements">
+
+                <button style="margin-right:2%;">👊</button>
+                <button style="margin-right:2%;">✋</button>
+                <button>✌</button>
+    
+            </div>
+
+            <div id="result">
+
+            </div>
+
+            <div class="option-responsive">
+
+            </div>
+
+        </div>
+
+
+
+        <div class="score">
+
+            <div class="divscorejoueur">
+
+                <h2>
+                    Joueur
+                </h2>
+                <p>
+                    <span id="score-joueur" >0</span> points
+                </p>
+
+            </div>
+
+            <div id="options">
+
+
+            </div>
+
+
+            <div class="divscoreordi">
+
+                <h2>
+                    Ordinateur
+                </h2>
+                <p>
+                    <span id="score-ordi">0</span> points
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        
+    </main>
+
+    <script src="scripts/app.js"></script>
+    
+</body>
+</html>

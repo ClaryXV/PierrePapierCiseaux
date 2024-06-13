@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #161616;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: #d6d6d6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 5%;
+        padding-bottom: 1%;
+        background-color: #161616;
+        color: #d6d6d6;
+    }
+    
+    header img {
+        width: 5%;  
+        margin-left: 15%; 
+        margin-top: 1%;
+        cursor:pointer;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .choix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 2;
+    }
+    .choix h2 {
+        font-size: 35px; 
+        text-align: center;
+    }
+
+    .divscorejoueur h2 {
+        font-size: 35px;
+    }
+
+    .divscorejoueur p {
+        font-size: 20px;
+    }
+
+    .divscoreordi p {
+        font-size: 20px;
+    }
+
+    .divscoreordi h2{
+        font-size: 35px;
+    }
+    
+    .choixelements {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .choixelements > button {
+        padding: 5%;
+        font-size: 35px;
+    }
+    
+    .score {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 3% 0;
+    }
+    
+    .divscorejoueur,
+    .divscoreordi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #result,
+    #options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    button {
+        align-items: center;
+        background: #e5e5e5;
+        border: 0 solid #E2E8F0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        transform: scale(1.03);
+    }
+    
+    button:active {
+        transform: scale(.98);
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    body {
+        background-color: #d6d6d6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 5%;
+        padding-bottom: 1%;
+        background-color: #161616;
+        color: #d6d6d6;
+    }
+
+    header img {
+        width: 5%;  
+        margin-left: 15%; 
+        margin-top: 1%;
+        cursor:pointer;
+    }
+
+    .choix h2 {
+        font-size: 35px; 
+        text-align: center;
+    }
+
+    .divscorejoueur h2 {
+        font-size: 35px;
+    }
+
+    .divscorejoueur p {
+        font-size: 20px;
+    }
+
+    .divscoreordi p {
+        font-size: 20px;
+    }
+
+    .divscoreordi h2{
+        font-size: 35px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .choix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 2;
+    }
+    
+    .choixelements {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .choixelements > button {
+        padding: 5%;
+        font-size: 35px;
+    }
+    
+    .score {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 3% 0;
+    }
+    
+    .divscorejoueur,
+    .divscoreordi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #result,
+    #options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    button {
+        align-items: center;
+        background: #e5e5e5;
+        border: 0 solid #E2E8F0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        transform: scale(1.03);
+    }
+    
+    button:active {
+        transform: scale(.98);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    body {
+        background-color: #d6d6d6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 5%;
+        padding-bottom: 1%;
+        background-color: #161616;
+        color: #d6d6d6;
+    }
+
+    .choix h2 {
+        font-size: 35px; 
+        text-align: center;
+    }
+
+    .divscorejoueur h2 {
+        font-size: 35px;
+    }
+
+    .divscorejoueur p {
+        font-size: 20px;
+    }
+
+    .divscoreordi p {
+        font-size: 20px;
+    }
+
+    .divscoreordi h2{
+        font-size: 35px;
+    }
+
+    header img {
+        width: 7%; 
+        margin-left: 15%; 
+        margin-top: 1%;
+        cursor:pointer;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .choix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 2;
+    }
+    
+    .choixelements {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .choixelements > button {
+        padding: 5%;
+        font-size: 35px;
+    }
+    
+    .score {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 3% 0;
+    }
+    
+    .divscorejoueur,
+    .divscoreordi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #result,
+    #options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    button {
+        align-items: center;
+        background: #e5e5e5;
+        border: 0 solid #E2E8F0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        transform: scale(1.03);
+    }
+    
+    button:active {
+        transform: scale(.98);
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    body {
+        background-color: #d6d6d6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 5%;
+        padding-bottom: 1%;
+        background-color: #161616;
+        color: #d6d6d6;
+    }
+    
+    header h1 {
+        display: none;
+    }
+
+    header img {
+        width: 15%; 
+        margin-top: 1%;
+        cursor:pointer;
+    }
+
+    .choix h2 {
+        font-size: 30px; 
+        text-align: center;
+    }
+
+    .divscorejoueur h2 {
+        font-size: 30px;
+    }
+
+    .divscorejoueur p {
+        font-size: 15px;
+    }
+
+    .divscoreordi p {
+        font-size: 15px;
+    }
+
+    .divscoreordi h2{
+        font-size: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .choix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 2;
+    }
+    
+    .choixelements {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .choixelements > button {
+        padding: 5%;
+        font-size: 35px;
+    }
+    
+    .score {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 3% 0;
+    }
+    
+    .divscorejoueur,
+    .divscoreordi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #result,
+    #options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    button {
+        align-items: center;
+        background: #e5e5e5;
+        border: 0 solid #E2E8F0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        transform: scale(1.03);
+    }
+    
+    button:active {
+        transform: scale(.98);
+    }
+}
